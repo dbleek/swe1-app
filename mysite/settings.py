@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-$gwcms6*@%3ht#&vevy#2xffxyg88ngz(4ez%0dh(&z$)-cy7^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'swe1-app-dev2.us-east-1.elasticbeanstalk.com',
+    'swe1-app-dev2.elasticbeanstalk.com',
+]
 
 
 # Application definition

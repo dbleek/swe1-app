@@ -1,8 +1,15 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
 import sys
 
+user_name = os.environ.get('USER')
+password = os.environ.get('PASSWORD')
+
+print(user_name, password)
 
 def main():
     """Run administrative tasks."""
