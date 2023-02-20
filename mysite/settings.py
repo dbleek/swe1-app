@@ -29,8 +29,8 @@ SECRET_KEY = str(os.getenv('DJANGO'))
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'swe1-app-dev2.us-east-1.elasticbeanstalk.com',
-    'swe1-app-dev2.elasticbeanstalk.com',
+    'dmb443-swe1-app.us-east-1.elasticbeanstalk.com',
+    'dmb443-swe1-app.elasticbeanstalk.com',
     '127.0.0.1'
 ]
 
