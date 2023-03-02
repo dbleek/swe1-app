@@ -1,19 +1,21 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 from dotenv import load_dotenv
-load_dotenv()
-
 import os
 import sys
 
-user_name = os.environ.get('USER')
-password = os.environ.get('PASSWORD')
+load_dotenv()
+
+
+user_name = os.environ.get("USER")
+password = os.environ.get("PASSWORD")
 
 print(user_name, password)
 
+
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -25,5 +27,5 @@ def main():
     execute_from_command_line(sys.argv)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
