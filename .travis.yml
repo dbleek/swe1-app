@@ -15,7 +15,7 @@ script:
 after_script:
 
 deploy:
-  provider: "elasticbeanstalk"
+  provider: elasticbeanstalk
 access_key_id: 
   secure: "$ACCESSKEYID"
 secret_access_key:
