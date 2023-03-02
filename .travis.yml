@@ -13,3 +13,15 @@ script:
   - flake8 .
 
 after_script:
+
+deploy:
+  provider: elasticbeanstalk
+access_key_id: $ACCESSKEYID
+  secret_access_key:
+    secure: "$SECRETACCESSKEY"
+  region: "us-east-1"
+  app: "swe1-app2"
+  env: "swe1-app2-dev"
+  bucket_name: "elasticbeanstalk-us-east-1-162312403626"
+  on:
+    branch: main
