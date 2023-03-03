@@ -13,7 +13,7 @@ script:
   - flake8 .
   - coverage run --source=mysite,polls manage.py test
 
-after_script:
+after_success:
   - coveralls
 
 deploy:
