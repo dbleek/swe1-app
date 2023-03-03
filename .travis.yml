@@ -16,8 +16,6 @@ script:
 after_script:
   - coveralls
 
-after_script:
-
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESSKEYID
